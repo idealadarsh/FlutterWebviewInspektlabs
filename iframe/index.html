@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Page iframe</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+      #iframe-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="iframe-container">
+      <iframe
+        src="https://superapp.inspektlabs.com/#5704415dc040"
+        width="100%"
+        height="100%"
+        allow="geolocation; camera; microphone; gyroscope; accelerometer; fullscreen; autoplay"
+        allowfullscreen
+        style="border: none; position: absolute; top: 0; left: 0"
+      ></iframe>
+    </div>
+  </body>
+</html>

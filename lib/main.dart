@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
     isInspectable: kDebugMode,
     mediaPlaybackRequiresUserGesture: false,
     allowsInlineMediaPlayback: true,
-    iframeAllow: "camera; microphone; geolocation",
+    iframeAllow: "camera; microphone; geolocation; gyroscope; accelerometer",
     iframeAllowFullscreen: true,
     geolocationEnabled: true,
   );
@@ -40,7 +40,8 @@ class _MyAppState extends State<MyApp> {
         child: InAppWebView(
           key: webViewKey,
           initialUrlRequest: URLRequest(
-            url: WebUri("https://superapp.inspektlabs.com/#5704415dc040"),
+            // url: WebUri("https://superapp.inspektlabs.com/#5704415dc040"),
+            url: WebUri("https://inspektframe.netlify.app/"),
           ),
           initialSettings: settings,
           onWebViewCreated: (controller) {
