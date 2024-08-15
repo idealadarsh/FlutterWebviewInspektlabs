@@ -30,6 +30,7 @@ class _MyAppState extends State<MyApp> {
     iframeAllow: "camera; microphone; geolocation; gyroscope; accelerometer",
     iframeAllowFullscreen: true,
     geolocationEnabled: true,
+    javaScriptEnabled: true,
   );
 
   @override
@@ -40,8 +41,8 @@ class _MyAppState extends State<MyApp> {
         child: InAppWebView(
           key: webViewKey,
           initialUrlRequest: URLRequest(
-            // url: WebUri("https://superapp.inspektlabs.com/#5704415dc040"),
-            url: WebUri("https://inspektframe.netlify.app/"),
+            url: WebUri(
+                "https://inspektframe.netlify.app/"), // Iframe Application
           ),
           initialSettings: settings,
           onWebViewCreated: (controller) {
